@@ -88,6 +88,6 @@ There are a couple of things I'd like to improve.
 
 - First, I want to improve the SNR a bit more. Right now, I'm picking up a useable signal when the satellite reaches 25 degrees above the horizon or so. I'm hoping that with an LNA and FM-bandstop filter, I'll be able to get some more SNR and suppress the FM radio interference I'm seeing when increasing the gain beyond 29.7 dB.
 
-- When I'll be able to get out of the house, I'd like to try if I can get a less obstructed view of the horizon and record larger images. Right now, I'm surrounded by other building which block large parts of the horizon 
+- When I'll be able to get out of the house, I'd like to try if I can get a less obstructed view of the horizon and record larger images. Right now, I'm surrounded by other buildings which block large parts of the horizon.
 
 - Finally, I'd really like to do the decoding of the image myself, probably in Python.
