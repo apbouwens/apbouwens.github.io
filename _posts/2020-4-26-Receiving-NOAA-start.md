@@ -1,11 +1,12 @@
 ---
 layout: post
-title: You're up and running!
-mathjax: true
+title: Receiving NOAA weather sattelite images
+mathjax: false
+comments: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+On the Youtube channel [The Thought Emporium](https://www.youtube.com/watch?v=cjClTnZ4Xh4), I learned that you can use software defined radio to receive weather sattelite image. I didn't think about trying it out myself until recently (Spring 2020), when I suddenly found myself with quite a bit of free time.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+I ordered an [RTL-SDR USB dongle](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/) with a basic dipole antenna kit and started experimenting.
 
-$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$
+![RTL-SDR USB dongle](/images/rtlsdr.png){: width="300px"}
