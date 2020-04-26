@@ -9,7 +9,7 @@ name: Arno's Blog
 description: Decoding satellite data
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/sputnik.svg
+avatar: https://apbouwens.github.io/images/sputnik.svg
 
 #
 # Flags below are optional
