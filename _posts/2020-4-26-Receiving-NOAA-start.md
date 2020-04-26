@@ -38,7 +38,7 @@ More details (including the radiation pattern) about the V-dipole are given [her
 
 I mounted the antenna on a broom stick using the flexible camera tripod which comes with the kit, and placed it on the roof outside my window:
 
-![V-dipole on broom stick](/images/NOAA_antenna.jpg){: width="200px"}
+![V-dipole on broom stick](/images/NOAA_antenna.JPG){: width="200px"}
 
 ## Finding the satellite
  
