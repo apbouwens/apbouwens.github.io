@@ -26,7 +26,7 @@ I used the same set-up to use APT transmission from NOAA satellites: a V-dipole 
 
 ## Demodulating the LRPT signal
 
-To receive APT images, it is enough to record the audio signal in SDR# and then process the audio file in one of the many decoders. This doesn't work for the LRPT signal. Here, we need to record the full baseband signal, centered at 137.1 MHz. The large sample rate (1 MS/sec, 8 bit per sample) leads to very large files very quickly (roughly 1GB in 10 minutes).
+To receive APT images, it is enough to record the audio signal in SDR# and then process the audio file in one of the many decoders. This doesn't work for the LRPT signal. Here, we need to record the full baseband signal. The large sample rate (1 MS/sec, 8 bit per sample) leads to very large files very quickly (roughly 1GB in 10 minutes).
 
 Instead, I used the Meteor Demodulator plugin for SDR#, [found here on happysat.nl](http://happysat.nl/meteor_2.3.zip). The plug-in will demodulate the signal, resulting in much smaller files. It also gives some immediate feedback telling you whether the signal is useable. See the screenshot below, with the plug-in active on the left.
 
@@ -34,7 +34,7 @@ I tuned the RTL-SDR to 137.1 MHz. There's no need to adjust for the Doppler shif
 
 ![SDR# screenshot of METEOR reception]({{ site.baseurl }}/images/METEOR_SDR_screenshot.jpg)
 
-When the signal is strong enough, the demodulator plug-in shows "Locked" in red text next to the frequency, indicating that a lock on the carrier frequency of the QPSK signal. In the constellation plot below, you can start to see four separate point clouds, indicating that SNR is high enough to discriminate between the four symbols of the QPSK signal. If the signal isn't strong enough, you only get one big hazy point cloud.
+When the signal is strong enough, the demodulator plug-in shows "Locked" in red text next to the frequency, indicating a lock on the carrier frequency of the QPSK signal. In the constellation plot below, you can start to see four separate point clouds, indicating that SNR is high enough to discriminate between the four symbols of the QPSK signal. If the signal isn't strong enough, you only get one big hazy point cloud.
 
 The demodulator writes the demodulated symbols to a '.s' file. To convert the .s file into an image, I used the LRPTofflineDecoder from the [Meteor LRPT Suite](https://leshamilton.co.uk/MeteorLRPTSuite.htm) by Les Hamilton. Hit the '72K' button to load the '.s' file. The '72K' stands for the 72k symbol rate used by METEOR-M2.
 
