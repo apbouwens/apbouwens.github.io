@@ -58,7 +58,7 @@ The NOAA weather satellites follow a polar orbit around the earth, so they can o
 
 The webpage shows when the satellite comes into view, and it also shows the Doppler shifted frequency of the satellite. The Doppler shift is definitely not negligible, and it changes by several kHz during the fly-over.
 
-## Configuring SDR&#35
+## Configuring SDR#
 
 Following the tutorials, I set the radio mode to wide-band FM (WFM), with a bandwidth of 34 kHz. I used a sample rate of 1.4 Msamples/s, and no automatic gains (AGC). An RF gain of 29.7 dB gave the best SNR in my case. Since I'm using the V3 of the RTL-SDR dongle which has a more accurate crystal, I didn't change the frequency correction setting.
 

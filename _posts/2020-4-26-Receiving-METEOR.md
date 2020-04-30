@@ -8,7 +8,7 @@ categories: [Weather satellite, METEOR, RTL-SDR]
 
 In the [previous post]({% post_url 2020-4-19-Receiving-NOAA-start %}) I talked about how I was mesmerized by the beautiful images radioed down to earth by the NOAA satellites. These use the analog [APT system](https://en.wikipedia.org/wiki/Automatic_picture_transmission), which dates back to the 1960s. So clearly, there should be room for (digital) improvement.
 
-And indeed there is, but there's just one lonely satellite sending down higher resolution, digital images in the easy 137 MHz range: the Russian [Meteor-M N2](https://directory.eoportal.org/web/eoportal/satellite-missions/m/meteor-m-2). Decoding these images is quite a bit more complex than for the APT images, but you do get rewarded for your trouble:
+And indeed there is, but there's just one lonely satellite sending down higher resolution, digital images in the easy VHF band (137.1 MHz): the Russian [Meteor-M N2](https://directory.eoportal.org/web/eoportal/satellite-missions/m/meteor-m-2). Decoding these images is quite a bit more complex than for the APT images, but you do get rewarded for your trouble:
 
 ![METEOR weather satellite image]({{ site.baseurl }}/images/meteor_first_receive.jpg)
 
@@ -36,7 +36,7 @@ I tuned the RTL-SDR to 137.1 MHz. There's no need to adjust for the Doppler shif
 
 When the signal is strong enough, the demodulator plug-in shows "Locked" in red text next to the frequency, indicating that a lock on the carrier frequency of the QPSK signal. In the constellation plot below, you can start to see four separate point clouds, indicating that SNR is high enough to discriminate between the four symbols of the QPSK signal. If the signal isn't strong enough, you only get one big hazy point cloud.
 
-The demodulator writes the demodulated symbols to a '.s' file. To convert the .s file into an image, I used the LRPTofflineDecoder from the [Meteor LRPT Suite](https://leshamilton.co.uk/MeteorLRPTSuite.htm) by Les Hamilton. CLick the '72K' button to load the '.s' file. The '72K' stands for the 72k symbol rate used by METEOR-M2.
+The demodulator writes the demodulated symbols to a '.s' file. To convert the .s file into an image, I used the LRPTofflineDecoder from the [Meteor LRPT Suite](https://leshamilton.co.uk/MeteorLRPTSuite.htm) by Les Hamilton. Hit the '72K' button to load the '.s' file. The '72K' stands for the 72k symbol rate used by METEOR-M2.
 
 ![SDR# screenshot of LRPT decoder]({{ site.baseurl }}/images/LRPTdecoder_screenshot.jpg)
 
