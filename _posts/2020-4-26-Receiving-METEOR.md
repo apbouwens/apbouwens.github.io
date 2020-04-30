@@ -52,7 +52,7 @@ I couldn't believe how easy it was to get this image! I read that receiving METE
 
 Besides the awesome resolution, there are two things that are striking about this image.
 
-- The colors aren't natural (blue snow)! That was to be expected since I set the blue channel to contain the infrared image (1.6 µm - 1.8 µm). To get natural-looking color, the spectral bands should have followed the [spectral sensitivity of the human eye](https://en.wikipedia.org/wiki/CIE_1931_color_space). But of course, this being a weather satellite, the infrared (temperature-related) spectra are much more interesting.
+- The colors aren't natural (blue snow)! To get natural-looking color, the spectral bands should have followed the [spectral sensitivity of the human eye](https://en.wikipedia.org/wiki/CIE_1931_color_space). But of course, this being a weather satellite, the infrared (temperature-related) spectra are much more interesting.
 
 - The image seems compressed inwards near the left and right edges. I guess this is how the METEOR's lens deforms the image to get more land area onto its sensor.
 
