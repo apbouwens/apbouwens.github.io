@@ -42,7 +42,9 @@ The demodulator writes the demodulated symbols to a '.s' file. To convert the .s
 
 ## Decoding the image
 
-Decoding the '.s' file yields three greyscale images, which the decoder indicates as '0.5-0.7', '0.7-1.1' and '1.6-1.8'. I'm assuming these are the spectral bands with the wavelength in micrometers. I created an RGB image by setting the R, G and B channels each to one of the spectral bands:
+Decoding the '.s' file yields three greyscale images, which the decoder indicates as '0.5-0.7', '0.7-1.1' and '1.6-1.8'. These are the spectral bands indicated by their  wavelengths in micrometers.
+
+I created an RGB image by setting the R, G and B channels each to one of the spectral bands:
 
 ![METEOR RGB image]({{ site.baseurl }}/images/meteor_rgb.jpg)
 
@@ -56,13 +58,26 @@ Besides the awesome resolution, there are two things that are striking about thi
 
 ## The spectral bands
 
-Here are the three different bands shown separately:
+The Low-resolution Multispectral Scanner instrument acquiring these images can access six different spectral bands, but right now it seems only the first three are transmitted on LRPT.
 
-| 0.5 µm - 0.7µm | 0.7 µm - 1.1 µm | 1.6 µm - 1.8 µm |
+Here's a list of the spectral bands as given on [ESA's pages](https://directory.eoportal.org/web/eoportal/satellite-missions/m/meteor-m-2):
+
+| Spectral band | Wavelengths |
+| --------------------------- |
+| Band No 1 (VIS = Visible) | 0.50 ± 0.2 - 0.70 ± 0.2 µm |
+| Band No 2 (VNIR =Visible Near Infrared) | 0.70 ± 0.2 - 1.10 ± 0.2 µm |
+| Band No 3 (SWIR = Short Wave Infrared) | 1.60 ± 0.50 - 1.80 ± 0.50 µm |
+| Band No 4 (MWIR = Mid Wave Infrared) | 3.50 ± 0.50 - 4.10 ± 0.50 µm |
+| Band No 5 (TIR = Thermal Infrared) | 10.5 ± 0.50 - 11.5 ± 0.50 µm |
+| Band No 6 (TIR = Thermal Infrared) | 11.5 ± 0.50 - 12.5 ± 0.50 µm |
+
+Here are the three first bands shown separately:
+
+| VIS: 0.5 µm - 0.7µm | VNIR: 0.7 µm - 1.1 µm | SWIR: 1.6 µm - 1.8 µm |
 |----------------------------------------------------|
 | ![METEOR R image]({{ site.baseurl }}/images/meteor_blue.jpg) | ![METEOR G image]({{ site.baseurl }}/images/meteor_green.jpg) | ![METEOR B image]({{ site.baseurl }}/images/meteor_red.jpg) |
 
-The contrast for snow on the Alps and in Norway is very striking in the visible light (0.5 µm - 0.7µm) image, while it appears dark (cold!) in the IR image (1.6 µm - 1.8 µm).
+The contrast for snow on the Alps and in Norway is very striking in the VIS and NVIS images, while it appears dark (cold!) in the SWIR image.
 
 ## A more natural-looking image
 
@@ -80,5 +95,6 @@ Meteor-M N2 is the only sat emitting LRPT in the easy VHF band for now... Two ot
 
 I really hope the [Meteor-M N2-3](https://www.wmo-sat.info/oscar/satellites/view/615) launch will happen this year (2020) as planned!
 
-This was a rainy day in Belgium:
+Here's a picture of a rainy day in Belgium:
+
 ![METEOR R image]({{ site.baseurl }}/images/METEOR_rainyday.jpg)
