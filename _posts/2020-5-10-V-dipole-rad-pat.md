@@ -10,7 +10,7 @@ Towards the end of a [METEOR acquisition](({% post_url 2020-4-26-Receiving-METEO
 
 In this post, I'll try to understand what happened.
 
-![V-dipole on broom stick]({{ site.baseurl }}/images/v-dipole/antenna.jpg){: width ="200 px"}
+![V-dipole on broom stick]({{ site.baseurl }}/.svg/antenna.jpg){: width ="200 px"}
 
 <!-- more -->
 
@@ -36,7 +36,7 @@ The fundamental element in NEC to describe an antenna is the *wire*, which is st
 
 This is a schematic of the V-dipole model:
 
-![V-dipole schematic]({{ site.baseurl }}/images/V-dipole/v-dipole.svg){: width="400 px"}
+![V-dipole schematic]({{ site.baseurl }}/.svg/v-dipole.svg){: width="400 px"}
 
 $L/2$ is the length of each leg, the connector element was taken to be 1 cm wide, and the V-dipole angle $\alpha$ was defined as shown above.
 
@@ -62,7 +62,7 @@ For starters, let's analyze the radiation patterns when the antenna is at half a
 
 Gain [dB], 30 degree elevation, $\lambda/2$ above ground (1.09 m)
 
-![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_azimuth_height1.09m.svg){: width="500 px"}
+![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_azimuth_height1.09m.svg){: width="500 px"}
 
 This plot shows the effect of the V-angle: at 0 degree, the antenna is a regular horizontal dipole, which has a null along the x-axis. The null isn't very deep due to the ground not being a perfect conductor. Increasing the V-angle also fills in the null, but the effect of imperfect ground is more pronounced.
 
@@ -70,7 +70,7 @@ This plot shows the effect of the V-angle: at 0 degree, the antenna is a regular
 
 Gain [dB], 90 degree azimuth, $\lambda/2$ above ground (1.09 m)
 
-![Radiation pattern vs elevation for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_height1.09m.svg){: width="600 px"}
+![Radiation pattern vs elevation for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_height1.09m.svg){: width="600 px"}
 
 From this radiation pattern, we can see that at roughly 8 degree elevation, the antenna has 0 dB of gain, and reaches a maximum around 30 degree of elevation. When the satellite is directly overhead, the gain decreases quite a bit, down to -5 dB (30%) when it is directly overhead. Since the satellite's signal doesn't need to travel very far when it is directly overhead, the lower gain is not an issue. The effect of the V-angle seems quite small in this pattern.
 
@@ -82,21 +82,21 @@ What happens when we place the 30 degree V-dipole at different heights above gro
 
 Gain [dB], 30 degree elevation, $\lambda/2$ above average ground
 
-![Radiation pattern vs elevation for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_azimuth_angle30.svg){: width="500 px"}
+![Radiation pattern vs elevation for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_azimuth_angle30.svg){: width="500 px"}
 
 #### Radiation pattern vs elevation
 
-![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30.svg){: width="600 px"}
+![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30.svg){: width="600 px"}
 
 That's a very busy graph! Below I've unpacked the radiation pattern for each antenna height:
 
 | 0.5 m | 1.0 m |
 |---------------|
-| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height0.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height1.0.svg) |
+| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height0.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height1.0.svg) |
 | 1.5 m | 2.0 m |
-| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height1.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height2.0.svg) |
+| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height1.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height2.0.svg) |
 | 2.5 m | 3.0 m |
-| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height2.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/images/V-dipole/radiation-patterns/RadiationPattern_elevation_angle30_height3.0.svg) |
+| ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height2.5.svg) | ![Radiation pattern vs azimuth for V-dipole]({{ site.baseurl }}/.svg/radiation-patterns/RadiationPattern_elevation_angle30_height3.0.svg) |
 
 ## Conclusions
 
