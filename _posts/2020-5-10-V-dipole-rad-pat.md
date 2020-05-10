@@ -113,3 +113,5 @@ Here's the sequence of antenna heights I'd like to try out in the field:
 * After that, we start to raise the antenna again to track it with the lower lobe until it disappears below the horizon.
 
 This might be pretty complicated, and perhaps a real directional antenna like a Yagi is a better idea. But still, this can all be done with a stick and the antenna from the RTL-SDR kit.
+
+![Satellite elevation tracking]({{ site.baseurl }}/images/v-dipole/v-dipole-animation.gif)
